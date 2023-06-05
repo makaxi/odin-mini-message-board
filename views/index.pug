@@ -2,4 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to the #{title}
+  
+  each m in messages
+    p= m.user + ' said "' + m.text + '" on ' + m.added
+ 
+  p <a href='/new'>Post a new Message</a>

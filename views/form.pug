@@ -1,0 +1,15 @@
+extends layout
+
+block content 
+  h1 Post a Message
+  form(action='/new', method='POST')
+    key Name: 
+      input(type='text', name='userName', placeholder='John')
+    br
+    br
+    key Message: 
+      input(type='text', name='inputMessage', placeholder='Type your message here ')
+    br
+    br
+    input(type='submit', value = 'Submit')
+
